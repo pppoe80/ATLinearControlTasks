@@ -2,55 +2,527 @@
  "cells": [
   {
    "kind": 2,
-   "value": "Remove[a]",
+   "value": "Remove[a,x,y]",
    "languageId": "wolfram",
    "outputs": [],
    "metadata": {},
    "executionSummary": {
     "timing": {
-     "startTime": 1694762351051,
-     "endTime": 1694762351117
+     "startTime": 1694777193118,
+     "endTime": 1694777193197
     },
-    "executionOrder": 267,
+    "executionOrder": 471,
     "success": true
    }
   },
   {
    "kind": 2,
-   "value": "k = 7\r\nDSolve[{y'[t]+y[t]*k==0,y[0]==3},y,t]",
+   "value": "k = 8\r\nTraditionalForm[equation1 = {y'[t]+y[t]*k==0}]\r\nTraditionalForm[charaEq1 = {x +k*x==0}]\r\nTraditionalForm[Solve[charaEq1,x]]\r\nTraditionalForm[DSolve[equation1,y,t]]\r\nTraditionalForm[init1 = {y[0]==3}]\r\nTraditionalForm[DSolve[{equation1,init1},y,t]]",
    "languageId": "wolfram",
    "outputs": [
     {
      "items": [
       {
-       "data": "<div class=\"wexpr\"><w>7</w></div>",
+       "data": "<div class=\"wexpr\"><w>8</w></div>",
        "mime": "x-application/wolfram-language-html"
       },
       {
-       "data": "7",
+       "data": "8",
        "mime": "text/plain"
       }
      ],
-     "id": "b8cdaa62-5041-40cf-883c-0cc71c1f6b5a",
+     "id": "06179189-63e8-494f-8122-516e1b3ba5ab",
      "metadata": {
-      "cellLabel": "Out[268]= ",
+      "cellLabel": "Out[472]= ",
       "isBoxData": false
      }
     },
     {
      "items": [
       {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><w>3</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>7</w></wrow><w></w><w>t</w></wrow></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>8</w><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow></wrow></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
        "mime": "x-application/wolfram-language-html"
       },
       {
-       "data": "{{y -> Function[{t}, 3/E^(7*t)]}}",
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{SuperscriptBox[\"y\", \"′\", MultilineFunction -> None], \"(\", \"t\", \")\"}], \"+\", RowBox[{\"8\", \" \", RowBox[{\"y\", \"(\", \"t\", \")\"}]}]}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
        "mime": "text/plain"
       }
      ],
-     "id": "03e34644-21b9-48d9-8881-2c61ad95abfc",
+     "id": "5aa0103e-0fc2-47a0-be01-2a39408d95a1",
      "metadata": {
-      "cellLabel": "Out[269]= ",
+      "cellLabel": "Out[473]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>9</w><w></w><w class=\"italic\">x</w></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"9\", \" \", \"x\"}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "f0a37967-1e08-47e3-bed8-b3035362bbd5",
+     "metadata": {
+      "cellLabel": "Out[474]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"x\", \"\", \"0\"}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "55b9fc2c-c00f-4a4f-8c7c-9237d52ba46e",
+     "metadata": {
+      "cellLabel": "Out[475]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>1</w></w></wsub><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>8</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{TemplateBox[{\"1\"}, \"CTraditional\"], \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"8\"}], \" \", \"t\"}]]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "120077d6-4759-44a7-8b01-84e6101de437",
+     "metadata": {
+      "cellLabel": "Out[476]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><w>3</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"y\", \"(\", \"0\", \")\"}], \"\", \"3\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7ca8a23f-8bf5-47ac-aabc-f31c16c5fb96",
+     "metadata": {
+      "cellLabel": "Out[477]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><w>3</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>8</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{\"3\", \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"8\"}], \" \", \"t\"}]]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "08c78367-5177-484f-a8eb-7e3d612d1177",
+     "metadata": {
+      "cellLabel": "Out[478]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694777193197,
+     "endTime": 1694777194017
+    },
+    "executionOrder": 472,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[equation2 = {y''[t]+(k+1)*y'[t]+k*y[t]==0}]\r\nTraditionalForm[charaEq2 = {x^2+(k+1)*x+k==0}]\r\nTraditionalForm[Solve[charaEq2]]\r\nTraditionalForm[DSolve[equation2,y,t]]\r\nTraditionalForm[init2 = {y[0]==4,y'[0]==-1}]\r\nTraditionalForm[DSolve[{equation2,init2},y,t]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>9</w><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><w>8</w><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow></wrow></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{SuperscriptBox[\"y\", \"′′\", MultilineFunction -> None], \"(\", \"t\", \")\"}], \"+\", RowBox[{\"9\", \" \", RowBox[{SuperscriptBox[\"y\", \"′\", MultilineFunction -> None], \"(\", \"t\", \")\"}]}], \"+\", RowBox[{\"8\", \" \", RowBox[{\"y\", \"(\", \"t\", \")\"}]}]}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a7a67203-f26d-4483-a5da-ccef718cc0bb",
+     "metadata": {
+      "cellLabel": "Out[479]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">x</w><w><w>2</w></w></wsup><w>+</w><wrow><w></w><w>9</w><w></w><w class=\"italic\">x</w></wrow><w>+</w><w>8</w></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{SuperscriptBox[\"x\", \"2\"], \"+\", RowBox[{\"9\", \" \", \"x\"}], \"+\", \"8\"}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a32b8397-2663-4a25-8d68-48ffe5f6a478",
+     "metadata": {
+      "cellLabel": "Out[480]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>8</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"{\", RowBox[{\"x\", \"\", RowBox[{\"-\", \"8\"}]}], \"}\"}], \",\", RowBox[{\"{\", RowBox[{\"x\", \"\", RowBox[{\"-\", \"1\"}]}], \"}\"}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "353b5f81-dd44-4333-8a18-bb3d4680551d",
+     "metadata": {
+      "cellLabel": "Out[481]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>1</w></w></wsub><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>8</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup></wrow><w>+</w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>2</w></w></wsub><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><w>-</w><w class=\"italic\">t</w></wrow></w></wsup></wrow></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{RowBox[{TemplateBox[{\"1\"}, \"CTraditional\"], \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"8\"}], \" \", \"t\"}]]}], \"+\", RowBox[{TemplateBox[{\"2\"}, \"CTraditional\"], \" \", SuperscriptBox[\"\", RowBox[{\"-\", \"t\"}]]}]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7af1c293-1445-449b-9190-bc56fac05391",
+     "metadata": {
+      "cellLabel": "Out[482]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><w>4</w></wrow><w>,</w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>1</w></wrow></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{\"y\", \"(\", \"0\", \")\"}], \"\", \"4\"}], \",\", RowBox[{RowBox[{SuperscriptBox[\"y\", \"′\", MultilineFunction -> None], \"(\", \"0\", \")\"}], \"\", RowBox[{\"-\", \"1\"}]}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "5ceab397-cfa9-4834-9e4e-d6cd3f201a85",
+     "metadata": {
+      "cellLabel": "Out[483]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>7</w></w></w></wfrac><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>8</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>31</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><w>7</w><w></w><w class=\"italic\">t</w></wrow></w></wsup></wrow><w>-</w><wrow><w></w><w>3</w></wrow></wrow><wb>)</wb></wrow></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{FractionBox[\"1\", \"7\"], \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"8\"}], \" \", \"t\"}]], \" \", RowBox[{\"(\", RowBox[{RowBox[{\"31\", \" \", SuperscriptBox[\"\", RowBox[{\"7\", \" \", \"t\"}]]}], \"-\", RowBox[{\"3\"}]}], \")\"}]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0f7476ab-a4d0-4ecf-80ba-deadb6606276",
+     "metadata": {
+      "cellLabel": "Out[484]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694777194017,
+     "endTime": 1694777194756
+    },
+    "executionOrder": 479,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[equation3 = {y''[t]+k^2*y[t]==0}]\r\nTraditionalForm[charaEq3 = {x^2 +k^2==0}]\r\nTraditionalForm[Solve[charaEq3,x]]\r\nTraditionalForm[DSolve[equation3,y,t]]\r\nTraditionalForm[init3 = {y[0]==0,y'[0]==k}]\r\nTraditionalForm[DSolve[{equation3,init3},y,t]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>64</w><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow></wrow></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{SuperscriptBox[\"y\", \"′′\", MultilineFunction -> None], \"(\", \"t\", \")\"}], \"+\", RowBox[{\"64\", \" \", RowBox[{\"y\", \"(\", \"t\", \")\"}]}]}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d29ba6ef-7485-4582-836e-b4d7af7aef67",
+     "metadata": {
+      "cellLabel": "Out[485]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">x</w><w><w>2</w></w></wsup><w>+</w><w>64</w></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{SuperscriptBox[\"x\", \"2\"], \"+\", \"64\"}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4eb79121-d963-4316-8ff2-b26540e8ae14",
+     "metadata": {
+      "cellLabel": "Out[486]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>8</w></wrow><w></w><w>𝕚</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><wrow><w></w><w>8</w><w></w><w>𝕚</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"{\", RowBox[{\"x\", \"\", RowBox[{RowBox[{\"-\", \"8\"}], \" \", \"\"}]}], \"}\"}], \",\", RowBox[{\"{\", RowBox[{\"x\", \"\", RowBox[{\"8\", \" \", \"\"}]}], \"}\"}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "983d9d2c-70c3-435f-a185-8f85856b9352",
+     "metadata": {
+      "cellLabel": "Out[487]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>1</w></w></wsub><w></w><wrow><w></w><w>cos</w><wrow><w></w><wb>(</wb><wrow><w></w><w>8</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>2</w></w></wsub><w></w><wrow><w></w><w>sin</w><wrow><w></w><wb>(</wb><wrow><w></w><w>8</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow></wrow></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{RowBox[{TemplateBox[{\"1\"}, \"CTraditional\"], \" \", RowBox[{\"cos\", \"(\", RowBox[{\"8\", \" \", \"t\"}], \")\"}]}], \"+\", RowBox[{TemplateBox[{\"2\"}, \"CTraditional\"], \" \", RowBox[{\"sin\", \"(\", RowBox[{\"8\", \" \", \"t\"}], \")\"}]}]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a4b9762b-94a6-42f5-815a-d42e785a7184",
+     "metadata": {
+      "cellLabel": "Out[488]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><w>0</w></wrow><w>,</w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><w>8</w></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{\"y\", \"(\", \"0\", \")\"}], \"\", \"0\"}], \",\", RowBox[{RowBox[{SuperscriptBox[\"y\", \"′\", MultilineFunction -> None], \"(\", \"0\", \")\"}], \"\", \"8\"}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "407fcb91-affc-4980-bf34-1ff26f833562",
+     "metadata": {
+      "cellLabel": "Out[489]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><w>sin</w><wrow><w></w><wb>(</wb><wrow><w></w><w>8</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{\"sin\", \"(\", RowBox[{\"8\", \" \", \"t\"}], \")\"}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "f0a9d1c3-da51-44d3-aa52-f99c6094730c",
+     "metadata": {
+      "cellLabel": "Out[490]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694777194756,
+     "endTime": 1694777195520
+    },
+    "executionOrder": 485,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[equation4 = {y''[t]+4*y'[t]+13*y[t]==0}]\r\nTraditionalForm[charaEq4 = {x^2 +4*x+13==0}]\r\nTraditionalForm[Solve[charaEq4,x]]\r\nTraditionalForm[DSolve[equation4,y,t]]\r\nTraditionalForm[init4 = {y[0]==2*k,y'[0]==-k}]\r\nTraditionalForm[DSolve[{equation4,init4},y,t]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>4</w><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><w>13</w><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow></wrow></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{SuperscriptBox[\"y\", \"′′\", MultilineFunction -> None], \"(\", \"t\", \")\"}], \"+\", RowBox[{\"4\", \" \", RowBox[{SuperscriptBox[\"y\", \"′\", MultilineFunction -> None], \"(\", \"t\", \")\"}]}], \"+\", RowBox[{\"13\", \" \", RowBox[{\"y\", \"(\", \"t\", \")\"}]}]}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "fff4426f-8b73-4d45-85a2-b4e1ee70f816",
+     "metadata": {
+      "cellLabel": "Out[493]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">x</w><w><w>2</w></w></wsup><w>+</w><wrow><w></w><w>4</w><w></w><w class=\"italic\">x</w></wrow><w>+</w><w>13</w></wrow><w class=\"symbol\"></w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{SuperscriptBox[\"x\", \"2\"], \"+\", RowBox[{\"4\", \" \", \"x\"}], \"+\", \"13\"}], \"\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c8605482-68d9-4035-a7e8-550512afa285",
+     "metadata": {
+      "cellLabel": "Out[494]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><wrow><w></w><w>2</w></wrow></wrow><w>-</w><wrow><w></w><w>3</w><w></w><w>𝕚</w></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">x</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><wrow><w></w><w>2</w></wrow></wrow><w>+</w><wrow><w></w><w>3</w><w></w><w>𝕚</w></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"{\", RowBox[{\"x\", \"\", RowBox[{RowBox[{\"-\", RowBox[{\"2\"}]}], \"-\", RowBox[{\"3\", \" \", \"\"}]}]}], \"}\"}], \",\", RowBox[{\"{\", RowBox[{\"x\", \"\", RowBox[{RowBox[{\"-\", RowBox[{\"2\"}]}], \"+\", RowBox[{\"3\", \" \", \"\"}]}]}], \"}\"}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "767bd67c-58ff-4384-9a54-34b0758213c9",
+     "metadata": {
+      "cellLabel": "Out[495]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>2</w></w></wsub><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup><w></w><wrow><w></w><w>cos</w><wrow><w></w><wb>(</wb><wrow><w></w><w>3</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><wsub><w></w><wrow><w></w><w class=\"italic\">c</w></wrow><w><w>1</w></w></wsub><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup><w></w><wrow><w></w><w>sin</w><wrow><w></w><wb>(</wb><wrow><w></w><w>3</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow></wrow></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{RowBox[{TemplateBox[{\"2\"}, \"CTraditional\"], \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"2\"}], \" \", \"t\"}]], \" \", RowBox[{\"cos\", \"(\", RowBox[{\"3\", \" \", \"t\"}], \")\"}]}], \"+\", RowBox[{TemplateBox[{\"1\"}, \"CTraditional\"], \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"2\"}], \" \", \"t\"}]], \" \", RowBox[{\"sin\", \"(\", RowBox[{\"3\", \" \", \"t\"}], \")\"}]}]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "5484c3fd-fe1d-4de8-b059-6dc445cf104d",
+     "metadata": {
+      "cellLabel": "Out[496]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><w>16</w></wrow><w>,</w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">y</w><w><w class=\"small-symbol\"></w></w></wsup><wrow><w></w><wb>(</wb><w>0</w><wb>)</wb></wrow></wrow><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>8</w></wrow></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{\"y\", \"(\", \"0\", \")\"}], \"\", \"16\"}], \",\", RowBox[{RowBox[{SuperscriptBox[\"y\", \"′\", MultilineFunction -> None], \"(\", \"0\", \")\"}], \"\", RowBox[{\"-\", \"8\"}]}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0ed18569-7336-4608-8970-95b69d84cbc8",
+     "metadata": {
+      "cellLabel": "Out[497]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w class=\"italic\">y</w><w class=\"symbol\"></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wb>{</wb><w class=\"italic\">t</w><wb>}</wb></wrow><w class=\"symbol\"></w><wrow><w></w><w>8</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w class=\"italic\">t</w></wrow></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>sin</w><wrow><w></w><wb>(</wb><wrow><w></w><w>3</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><w>cos</w><wrow><w></w><wb>(</wb><wrow><w></w><w>3</w><w></w><w class=\"italic\">t</w></wrow><wb>)</wb></wrow></wrow></wrow></wrow><wb>)</wb></wrow></wrow></wrow><wb>)</wb></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"{\", RowBox[{\"y\", \"\", RowBox[{\"(\", RowBox[{RowBox[{\"{\", \"t\", \"}\"}], \"\", RowBox[{\"8\", \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"2\"}], \" \", \"t\"}]], \" \", RowBox[{\"(\", RowBox[{RowBox[{\"sin\", \"(\", RowBox[{\"3\", \" \", \"t\"}], \")\"}], \"+\", RowBox[{\"2\", \" \", RowBox[{\"cos\", \"(\", RowBox[{\"3\", \" \", \"t\"}], \")\"}]}]}], \")\"}]}]}], \")\"}]}], \"}\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7087fd28-c008-4d26-86cd-628b8061257c",
+     "metadata": {
+      "cellLabel": "Out[498]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694777311103,
+     "endTime": 1694777311854
+    },
+    "executionOrder": 493,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "Solve[lambda^2+a*lambda+k==0,lambda]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>a</w></wrow><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><wrow><w></w><wrow><w></w><w>-</w><w>32</w></wrow><w>+</w><wsup><w></w><w>a</w><w><w>2</w></w></wsup></wrow></w></wsqrt></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>a</w></wrow><w>+</w><wsqrt><w><w>\\</w></w><w></w><w><wrow><w></w><wrow><w></w><w>-</w><w>32</w></wrow><w>+</w><wsup><w></w><w>a</w><w><w>2</w></w></wsup></wrow></w></wsqrt></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{lambda -> (-a - Sqrt[-32 + a^2])/2}, {lambda -> (-a + Sqrt[-32 + a^2])/2}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "01834f0e-f80f-4b31-9c0f-2f2698f35fa5",
+     "metadata": {
+      "cellLabel": "Out[492]= ",
       "isBoxData": false
      }
     }
@@ -58,346 +530,10 @@
    "metadata": {},
    "executionSummary": {
     "timing": {
-     "startTime": 1694762351117,
-     "endTime": 1694762351385
+     "startTime": 1694777195681,
+     "endTime": 1694777195829
     },
-    "executionOrder": 268,
-    "success": true
-   }
-  },
-  {
-   "kind": 2,
-   "value": "DSolve[{y''[t]+(k+1)*y'[t]+k*y[t]==0,y[0]==4,y'[0]==-1-3*k},y,t]",
-   "languageId": "wolfram",
-   "outputs": [
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>7</w></wrow><w></w><w>t</w></wrow></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>3</w><w>+</w><wsup><w></w><w>𝕖</w><w><wrow><w></w><w>6</w><w></w><w>t</w></wrow></w></wsup></wrow><wb>)</wb></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, (3 + E^(6*t))/E^(7*t)]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "4170d1e2-fd5c-48ee-9879-14e99dd04096",
-     "metadata": {
-      "cellLabel": "Out[270]= ",
-      "isBoxData": false
-     }
-    }
-   ],
-   "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1694762351385,
-     "endTime": 1694762351543
-    },
-    "executionOrder": 270,
-    "success": true
-   }
-  },
-  {
-   "kind": 2,
-   "value": "DSolve[{y''[t]+k^2*y[t]==0,y[0]==0,y'[0]==k},y,t]",
-   "languageId": "wolfram",
-   "outputs": [
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><w>Sin</w><wrow><w></w><wb>[</wb><wrow><w></w><w>7</w><w></w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, Sin[7*t]]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "3d68354c-d6cb-4aee-87a3-525aeaac67c2",
-     "metadata": {
-      "cellLabel": "Out[271]= ",
-      "isBoxData": false
-     }
-    }
-   ],
-   "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1694762351543,
-     "endTime": 1694762351698
-    },
-    "executionOrder": 271,
-    "success": true
-   }
-  },
-  {
-   "kind": 2,
-   "value": "DSolve[{y''[t]+4*y'[t]+13*y[t]==0,y[0]==2*k,y'[0]==-k},y,t]",
-   "languageId": "wolfram",
-   "outputs": [
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><w>7</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w>t</w></wrow></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>2</w><w></w><wrow><w></w><w>Cos</w><wrow><w></w><wb>[</wb><wrow><w></w><w>3</w><w></w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><w>Sin</w><wrow><w></w><wb>[</wb><wrow><w></w><w>3</w><w></w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow><wb>)</wb></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, (7*(2*Cos[3*t] + Sin[3*t]))/E^(2*t)]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "d4babd47-ab31-48f0-9f09-5dc41724e58e",
-     "metadata": {
-      "cellLabel": "Out[272]= ",
-      "isBoxData": false
-     }
-    }
-   ],
-   "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1694762351698,
-     "endTime": 1694762351857
-    },
-    "executionOrder": 272,
-    "success": true
-   }
-  },
-  {
-   "kind": 2,
-   "value": "Solve[lambda^2+a*lambda+k==0,lambda]\r\n\r\na = Sqrt[28]\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]\r\n\r\na = Sqrt[28-0.1]\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]\r\n\r\na = Sqrt[28+0.1]\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]\r\n\r\na = 0\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]",
-   "languageId": "wolfram",
-   "outputs": [
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>a</w></wrow><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><wrow><w></w><wrow><w></w><w>-</w><w>28</w></wrow><w>+</w><wsup><w></w><w>a</w><w><w>2</w></w></wsup></wrow></w></wsqrt></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>a</w></wrow><w>+</w><wsqrt><w><w>\\</w></w><w></w><w><wrow><w></w><wrow><w></w><w>-</w><w>28</w></wrow><w>+</w><wsup><w></w><w>a</w><w><w>2</w></w></wsup></wrow></w></wsqrt></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{lambda -> (-a - Sqrt[-28 + a^2])/2}, {lambda -> (-a + Sqrt[-28 + a^2])/2}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "e27e87bb-40e7-4545-bce5-7f9279a772b4",
-     "metadata": {
-      "cellLabel": "Out[273]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><w>2</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "2*Sqrt[7]",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "7936f915-9a82-4787-8d36-9f67099ede49",
-     "metadata": {
-      "cellLabel": "Out[274]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{lambda -> -Sqrt[7]}, {lambda -> -Sqrt[7]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "bf57c145-c765-442f-9081-29570c42d412",
-     "metadata": {
-      "cellLabel": "Out[275]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt><w></w><w>t</w></wrow></w><w><w></w><w><w>2</w></w></w></wfrac></wrow><w>-</w><wfrac><w><wrow><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt><w></w><w>t</w></wrow></w></wsup><w></w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>1</w></w></wsub></wrow></w><w><w></w><w><wrow><w></w><w>2</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></w></w></wfrac><w>+</w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>2</w></w></wsub></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, -1/2*(Sqrt[7]*t) - C[1]/(2*Sqrt[7]*E^(2*Sqrt[7]*t)) + C[2]]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "17c334ec-e9e7-41a8-b63b-3b11711ad2b0",
-     "metadata": {
-      "cellLabel": "Out[276]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><w>5.28205</w></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "5.282045058497703",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "9ee58ea7-ad15-499c-b77f-717853395f83",
-     "metadata": {
-      "cellLabel": "Out[277]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>2.64102</w></wrow><w>-</w><wrow><w></w><w>0.158114</w><w></w><w>𝕚</w></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>2.64102</w></wrow><w>+</w><wrow><w></w><w>0.158114</w><w></w><w>𝕚</w></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{lambda -> -2.6410225292488514 - 0.15811388300841728*I}, {lambda -> -2.6410225292488514 + 0.15811388300841728*I}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "1f57a348-a802-414a-be21-4eab9707cbc5",
-     "metadata": {
-      "cellLabel": "Out[278]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wrow><w></w><wrow><w></w><w>-</w><w>1.32524</w></wrow><w></w><w>t</w></wrow><w>-</w><wrow><w></w><w>0.189321</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>5.28205</w></wrow><w></w><w>t</w></wrow></w></wsup><w></w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>1</w></w></wsub></wrow><w>+</w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>2</w></w></wsub></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, -1.3252442799098179*t - (0.18932061141568826*C[1])/E^(5.282045058497703*t) + C[2]]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "0bc6e70c-15a7-40be-982b-ae4d1b61b169",
-     "metadata": {
-      "cellLabel": "Out[279]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><w>5.30094</w></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "5.300943312279429",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "2d14b978-d5d5-41c8-ac90-3cddb729aba3",
-     "metadata": {
-      "cellLabel": "Out[280]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>2.80859</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>2.49236</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{lambda -> -2.8085855391481376}, {lambda -> -2.4923577731312916}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "0e9c0707-1ca4-4017-9dda-e147f45f6ac9",
-     "metadata": {
-      "cellLabel": "Out[281]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wrow><w></w><wrow><w></w><w>-</w><w>1.32052</w></wrow><w></w><w>t</w></wrow><w>-</w><wrow><w></w><w>0.188646</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>5.30094</w></wrow><w></w><w>t</w></wrow></w></wsup><w></w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>1</w></w></wsub></wrow><w>+</w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>2</w></w></wsub></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, -1.3205196863329536*t - (0.18864566947613623*C[1])/E^(5.300943312279429*t) + C[2]]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "c3a0e996-dbda-4db9-849b-cc8369f30ede",
-     "metadata": {
-      "cellLabel": "Out[282]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><w>0</w></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "0",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "2d2ee9f6-0ea9-4c0d-8dd2-d884c6090fb1",
-     "metadata": {
-      "cellLabel": "Out[283]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>𝕚</w></wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{lambda -> (-I)*Sqrt[7]}, {lambda -> I*Sqrt[7]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "23c19bf6-5da0-4db7-a910-57d94885ebb2",
-     "metadata": {
-      "cellLabel": "Out[284]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>7</w><w></w><wsup><w></w><w>t</w><w><w>2</w></w></wsup></wrow></w><w><w></w><w><w>2</w></w></w></wfrac></wrow><w>+</w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>1</w></w></wsub><w>+</w><wrow><w></w><w>t</w><w></w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>2</w></w></wsub></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "{{y -> Function[{t}, (-7*t^2)/2 + C[1] + t*C[2]]}}",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "a634ac24-7c12-4356-8f93-918bb1aed21b",
-     "metadata": {
-      "cellLabel": "Out[285]= ",
-      "isBoxData": false
-     }
-    }
-   ],
-   "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1694762351857,
-     "endTime": 1694762353399
-    },
-    "executionOrder": 273,
+    "executionOrder": 492,
     "success": true
    }
   }
