@@ -1,0 +1,288 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "k = 7\r\nDSolve[{y'[t]+y[t]*k==0,y[0]==3},y,t]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>7</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "7",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ed1ba6dc-5f9b-4fe4-8e2f-943fdaea47f6",
+     "metadata": {
+      "cellLabel": "Out[58]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><w>3</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>7</w></wrow><w></w><w>t</w></wrow></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{y -> Function[{t}, 3/E^(7*t)]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "1d23557a-40ca-4d89-a156-c1b91a4e29b5",
+     "metadata": {
+      "cellLabel": "Out[59]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694761217480,
+     "endTime": 1694761217757
+    },
+    "executionOrder": 58,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "DSolve[{y''[t]+(k+1)*y'[t]+k*y[t]==0,y[0]==4,y'[0]==-1-3*k},y,t]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>7</w></wrow><w></w><w>t</w></wrow></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>3</w><w>+</w><wsup><w></w><w>𝕖</w><w><wrow><w></w><w>6</w><w></w><w>t</w></wrow></w></wsup></wrow><wb>)</wb></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{y -> Function[{t}, (3 + E^(6*t))/E^(7*t)]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a00dfa5d-b7c4-48a2-92e3-8e670d8dccc8",
+     "metadata": {
+      "cellLabel": "Out[60]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694761217757,
+     "endTime": 1694761217920
+    },
+    "executionOrder": 60,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "DSolve[{y''[t]+k^2*y[t]==0,y[0]==0,y'[0]==k},y,t]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><w>Sin</w><wrow><w></w><wb>[</wb><wrow><w></w><w>7</w><w></w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{y -> Function[{t}, Sin[7*t]]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ac5a594e-c91a-45e2-8452-746e4e6bb508",
+     "metadata": {
+      "cellLabel": "Out[61]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694761217921,
+     "endTime": 1694761218072
+    },
+    "executionOrder": 61,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "DSolve[{y''[t]+4*y'[t]+13*y[t]==0,y[0]==2*k,y'[0]==-k},y,t]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><w>7</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w>t</w></wrow></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>2</w><w></w><wrow><w></w><w>Cos</w><wrow><w></w><wb>[</wb><wrow><w></w><w>3</w><w></w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><w>Sin</w><wrow><w></w><wb>[</wb><wrow><w></w><w>3</w><w></w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow><wb>)</wb></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{y -> Function[{t}, (7*(2*Cos[3*t] + Sin[3*t]))/E^(2*t)]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "cdc750ac-3e1f-4a0f-8864-3ec2d805bbd0",
+     "metadata": {
+      "cellLabel": "Out[62]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694761218072,
+     "endTime": 1694761218230
+    },
+    "executionOrder": 62,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "Solve[lambda^2+a*lambda+k==0,lambda]\r\na = Sqrt[28]\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]\r\na = Sqrt[28]+0.1\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]\r\na = Sqrt[28]-0.1\r\nSolve[lambda^2+a*lambda+k==0,lambda]\r\nDSolve[y''[t]+a*y'[t]+k==0,y,t]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>𝕚</w></wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{lambda -> (-I)*Sqrt[7]}, {lambda -> I*Sqrt[7]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0dacf324-5632-4682-b52f-5f6abb77854a",
+     "metadata": {
+      "cellLabel": "Out[75]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>2</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "2*Sqrt[7]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "03e4baa0-fc04-4ff5-bbce-a1a395726c10",
+     "metadata": {
+      "cellLabel": "Out[76]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{lambda -> -Sqrt[7]}, {lambda -> -Sqrt[7]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ec3cd995-b4dd-4f10-86b8-c92bb8e2b15f",
+     "metadata": {
+      "cellLabel": "Out[77]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt><w></w><w>t</w></wrow></w><w><w></w><w><w>2</w></w></w></wfrac></wrow><w>-</w><wfrac><w><wrow><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt><w></w><w>t</w></wrow></w></wsup><w></w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>1</w></w></wsub></wrow></w><w><w></w><w><wrow><w></w><w>2</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></w></w></wfrac><w>+</w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>2</w></w></wsub></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{y -> Function[{t}, -1/2*(Sqrt[7]*t) - C[1]/(2*Sqrt[7]*E^(2*Sqrt[7]*t)) + C[2]]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "b9726982-9f4f-4846-b2d6-6eb821abd0cb",
+     "metadata": {
+      "cellLabel": "Out[78]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "0",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d9e37a15-33de-45a0-8604-a002a473079b",
+     "metadata": {
+      "cellLabel": "Out[79]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>𝕚</w></wrow><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>lambda</w><w class=\"symbol\"></w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>7</w></w></wsqrt></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{lambda -> (-I)*Sqrt[7]}, {lambda -> I*Sqrt[7]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "68e3d68d-36b5-4175-b1f8-4631837d859d",
+     "metadata": {
+      "cellLabel": "Out[80]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wb>{</wb><wrow><w></w><w>y</w><w class=\"symbol\"></w><wrow><w></w><w>Function</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>t</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>7</w><w></w><wsup><w></w><w>t</w><w><w>2</w></w></wsup></wrow></w><w><w></w><w><w>2</w></w></w></wfrac></wrow><w>+</w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>1</w></w></wsub><w>+</w><wrow><w></w><w>t</w><w></w><wsub><w></w><wrow><w></w><w>𝕔</w></wrow><w><w>2</w></w></wsub></wrow></wrow></wrow><wb>]</wb></wrow></wrow></wrow><wb>}</wb></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{y -> Function[{t}, (-7*t^2)/2 + C[1] + t*C[2]]}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e588c81d-56ea-406d-8a0f-207f2759defb",
+     "metadata": {
+      "cellLabel": "Out[81]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1694761550469,
+     "endTime": 1694761551439
+    },
+    "executionOrder": 75,
+    "success": true
+   }
+  }
+ ]
+}
