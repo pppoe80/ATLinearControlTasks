@@ -23,10 +23,10 @@ function [y0,y0dot1,a] = setconfig(modeltesting,k)
         case 5+1
             y0 = 1;
             y0dot1 = 0;
-            a=sqrt(29);
+            a=sqrt(20);
         case 5+2
             y0 = 1;
             y0dot1 = 0;
-            a=sqrt(27);
+            a=sqrt(36);
     end
 end
