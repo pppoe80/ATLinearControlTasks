@@ -1,6 +1,6 @@
 k = 1 + 7;
 w = 3;
-question = 4;
+question = 3;
 
 switch question
     case 1
