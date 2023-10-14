@@ -5,3 +5,8 @@ task1/slprj/sim/varcache/models/checksumOfCache.mat
 task1/models.slxc
 Practice3/slprj
 Practice3/LSR.slxc
+Practice3/*.fls
+Practice3/*.aux
+Practice3/*.log
+Practice3/*.fdb_latexmk
+Practice3/*.synctex.gz
