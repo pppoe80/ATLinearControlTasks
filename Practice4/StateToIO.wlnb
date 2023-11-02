@@ -1,0 +1,586 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "A = {{2-k,1},{0,-3}}\r\nB = {{-1},{2+k}}\r\nCI = {1,0}\r\nDI = 0\r\nTraditionalForm[Together[W = CI.Inverse[({{s,0},{0,s}}-A)].B+DI]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>2</w><w>-</w><w>k</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><wrow><w></w><w>-</w><w>3</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{2 - k, 1}, {0, -3}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d7764875-94a7-4bf8-ae4f-bf9009cc7dfe",
+     "metadata": {
+      "cellLabel": "Out[1]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>-</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>+</w><w>k</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{-1}, {2 + k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d22fa452-c959-474c-939b-ae1818bb797f",
+     "metadata": {
+      "cellLabel": "Out[2]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{1, 0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "55d72bc9-b66a-4c1d-a0d6-932a7ed09d7a",
+     "metadata": {
+      "cellLabel": "Out[3]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "0",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "6a1f4b1d-1bbb-4f0d-acbd-63fa875ad64d",
+     "metadata": {
+      "cellLabel": "Out[4]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wfrac><w><wrow><w></w><w class=\"italic\">k</w><w>-</w><w class=\"italic\">s</w><w>-</w><w>1</w></wrow></w><w><w></w><w><wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">s</w><w>+</w><w>3</w></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>+</w><w class=\"italic\">s</w><w>-</w><w>2</w></wrow><wb>)</wb></wrow></wrow></w></w></wfrac><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", FractionBox[RowBox[{\"k\", \"-\", \"s\", \"-\", \"1\"}], RowBox[{RowBox[{\"(\", RowBox[{\"s\", \"+\", \"3\"}], \")\"}], \" \", RowBox[{\"(\", RowBox[{\"k\", \"+\", \"s\", \"-\", \"2\"}], \")\"}]}]], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "892d4271-39fa-4156-bdd5-c3de2afa56fc",
+     "metadata": {
+      "cellLabel": "Out[5]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "A = {{0,1+k},{2,0}}\r\nB = {{0},{1}}\r\nCI = {1,-1}\r\nDI = 0\r\nTraditionalForm[Together[W = CI.Inverse[({{s,0},{0,s}}-A)].B+DI]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1 + k}, {2, 0}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2461b324-3522-411d-945d-d75d5a40962b",
+     "metadata": {
+      "cellLabel": "Out[1]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>1</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0}, {1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "80ebdb5d-0848-4252-85e6-20673a009fd0",
+     "metadata": {
+      "cellLabel": "Out[2]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{1, -1}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "07712a64-29e3-44cd-9911-eee195dfbab2",
+     "metadata": {
+      "cellLabel": "Out[3]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "0",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "3f7432dd-68af-4ef4-8e64-f9c20f05e2ea",
+     "metadata": {
+      "cellLabel": "Out[4]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wfrac><w><wrow><w></w><wrow><w></w><w>-</w><wrow><w></w><w class=\"italic\">k</w></wrow></wrow><w>+</w><w class=\"italic\">s</w><w>-</w><w>1</w></wrow></w><w><w></w><w><wrow><w></w><wrow><w></w><w>2</w><w></w><w class=\"italic\">k</w></wrow><w>-</w><wrow><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>2</w></w></wsup></wrow><w>+</w><w>2</w></wrow></w></w></wfrac><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", FractionBox[RowBox[{RowBox[{\"-\", RowBox[{\"k\"}]}], \"+\", \"s\", \"-\", \"1\"}], RowBox[{RowBox[{\"2\", \" \", \"k\"}], \"-\", RowBox[{SuperscriptBox[\"s\", \"2\"]}], \"+\", \"2\"}]], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "5f927d4d-ac7d-4f33-834b-4dce54672357",
+     "metadata": {
+      "cellLabel": "Out[5]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "A = {{-2,1},{1+k,3}}\r\nB = {{0,1},{-2,1}}\r\nCI = {0,1}\r\nDI = 0\r\nTraditionalForm[Together[W = CI.Inverse[({{s,0},{0,s}}-A)].B+DI]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><w>,</w><w>3</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{-2, 1}, {1 + k, 3}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "5887a36d-df6a-408d-91e5-2c67596152d3",
+     "metadata": {
+      "cellLabel": "Out[11]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1}, {-2, 1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "00c875b8-5b1b-4ff3-82bf-b278cd250565",
+     "metadata": {
+      "cellLabel": "Out[12]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{0, 1}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "44299892-d17f-4959-b8e0-75f9038b366f",
+     "metadata": {
+      "cellLabel": "Out[13]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "0",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "47af665d-4498-456a-9e7f-a5e25c184c1b",
+     "metadata": {
+      "cellLabel": "Out[14]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">s</w><w>+</w><w>2</w></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><wrow><w></w><wrow><w></w><w>-</w><w class=\"italic\">k</w></wrow><w>+</w><wsup><w></w><w class=\"italic\">s</w><w><w>2</w></w></wsup><w>-</w><w class=\"italic\">s</w><w>-</w><w>7</w></wrow></w></w></wfrac></wrow><w>,</w><wfrac><w><wrow><w></w><wrow><w></w><w>-</w><wrow><w></w><w class=\"italic\">k</w></wrow></wrow><w>-</w><w class=\"italic\">s</w><w>-</w><w>3</w></wrow></w><w><w></w><w><wrow><w></w><w class=\"italic\">k</w><w>-</w><wrow><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>2</w></w></wsup></wrow><w>+</w><w class=\"italic\">s</w><w>+</w><w>7</w></wrow></w></w></wfrac></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"-\", FractionBox[RowBox[{\"2\", \" \", RowBox[{\"(\", RowBox[{\"s\", \"+\", \"2\"}], \")\"}]}], RowBox[{RowBox[{\"-\", \"k\"}], \"+\", SuperscriptBox[\"s\", \"2\"], \"-\", \"s\", \"-\", \"7\"}]]}], \",\", FractionBox[RowBox[{RowBox[{\"-\", RowBox[{\"k\"}]}], \"-\", \"s\", \"-\", \"3\"}], RowBox[{\"k\", \"-\", RowBox[{SuperscriptBox[\"s\", \"2\"]}], \"+\", \"s\", \"+\", \"7\"}]]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "cd19e5c9-2c8a-499c-a77e-133b5b5dc303",
+     "metadata": {
+      "cellLabel": "Out[15]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "A = {{2,1},{0,k}}\r\nB = {{1},{2}}\r\nCI = {{1,-2},{2,1}}\r\nDI = 0\r\nTraditionalForm[Together[W = CI.Inverse[({{s,0},{0,s}}-A)].B+DI]]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>k</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{2, 1}, {0, k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "cf3e9724-e0ae-4a45-9d4a-5a3eff34f3ae",
+     "metadata": {
+      "cellLabel": "Out[6]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>1</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>2</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1}, {2}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e75df0c9-4d5c-4c2c-9e62-9f8e0158c9ae",
+     "metadata": {
+      "cellLabel": "Out[7]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>2</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, -2}, {2, 1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "964e77ff-a7bf-4513-bd79-3eb77e4280b5",
+     "metadata": {
+      "cellLabel": "Out[8]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "0",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "9754aece-4de3-4be6-a9c1-facb252c88cc",
+     "metadata": {
+      "cellLabel": "Out[9]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(1,max-content);\"><w><wfrac><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><wrow><w></w><w>3</w><w></w><w class=\"italic\">s</w></wrow><w>-</w><w>10</w></wrow></w><w><w></w><w><wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">s</w><w>-</w><w>2</w></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>-</w><w class=\"italic\">s</w></wrow><wb>)</wb></wrow></wrow></w></w></wfrac></w><w><wfrac><w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>-</w><wrow><w></w><w>2</w><w></w><w class=\"italic\">s</w></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">s</w><w>-</w><w>2</w></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>-</w><w class=\"italic\">s</w></wrow><wb>)</wb></wrow></wrow></w></w></wfrac></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{FractionBox[RowBox[{\"k\", \"+\", RowBox[{\"3\", \" \", \"s\"}], \"-\", \"10\"}], RowBox[{RowBox[{\"(\", RowBox[{\"s\", \"-\", \"2\"}], \")\"}], \" \", RowBox[{\"(\", RowBox[{\"k\", \"-\", \"s\"}], \")\"}]}]]}, {FractionBox[RowBox[{\"2\", \" \", RowBox[{\"(\", RowBox[{\"k\", \"-\", RowBox[{\"2\", \" \", \"s\"}]}], \")\"}]}], RowBox[{RowBox[{\"(\", RowBox[{\"s\", \"-\", \"2\"}], \")\"}], \" \", RowBox[{\"(\", RowBox[{\"k\", \"-\", \"s\"}], \")\"}]}]]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ad397ba8-eed8-4fc3-a0c1-0203c9ba9b1d",
+     "metadata": {
+      "cellLabel": "Out[10]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[LaplaceTransform[{y'''[t]+k y''[t]+2y[t]==3u[t]},t,s]/.{y[0]->0,y'[0]->0,y''[0]->0,u[0]->0}]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><w class=\"italic\">k</w><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>2</w></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>3</w></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow></wrow><w class=\"symbol\"></w><wrow><w></w><w>3</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">u</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{\"k\", \" \", SuperscriptBox[\"s\", \"2\"], \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"y\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}], \"+\", RowBox[{SuperscriptBox[\"s\", \"3\"], \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"y\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}], \"+\", RowBox[{\"2\", \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"y\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}]}], \"\", RowBox[{\"3\", \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"u\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2f5abbf7-3b69-4d3a-b94b-6b6667ee7663",
+     "metadata": {
+      "cellLabel": "Out[16]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[{{0,1,0},{0,0,1},{-2,0,-k}}]\r\nTraditionalForm[{{0},{0},{1}}]\r\nTraditionalForm[{3,0,0}]\r\nTraditionalForm[{{0}}]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(3,max-content);\"><w><w>0</w></w><w><w>1</w></w><w><w>0</w></w><w><w>0</w></w><w><w>0</w></w><w><w>1</w></w><w><wrow><w></w><w>-</w><w>2</w></wrow></w><w><w>0</w></w><w><wrow><w></w><w>-</w><w class=\"italic\">k</w></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\", \"1\", \"0\"}, {\"0\", \"0\", \"1\"}, {RowBox[{\"-\", \"2\"}], \"0\", RowBox[{\"-\", \"k\"}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d2eef90d-bdf2-4f2e-99e4-9e0105829b5b",
+     "metadata": {
+      "cellLabel": "Out[37]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(1,max-content);\"><w><w>0</w></w><w><w>0</w></w><w><w>1</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\"}, {\"0\"}, {\"1\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "8f2057c0-f240-42af-bc1c-2bb8699df55f",
+     "metadata": {
+      "cellLabel": "Out[38]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>3</w><w>,</w><w>0</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{\"3\", \",\", \"0\", \",\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "9bd5be12-77be-456a-9e17-c460eefee33d",
+     "metadata": {
+      "cellLabel": "Out[39]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(1,max-content);\"><w><w>0</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ffd791b4-268a-462d-85d5-70a72f496da5",
+     "metadata": {
+      "cellLabel": "Out[40]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[LaplaceTransform[{y'''[t]+(k-1) y''[t]+3y[t]==u'''[t]+u'[t]+2u[t]},t,s]/.{y[0]->0,y'[0]->0,y''[0]->0,u[0]->0,u'[0]->0,u''[0]->0}]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>-</w><w>1</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>2</w></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>3</w></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>3</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">y</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow></wrow><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><wsup><w></w><w class=\"italic\">s</w><w><w>3</w></w></wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">u</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w class=\"italic\">s</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">u</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><wsub><w></w><w>ℒ</w><w><w class=\"italic\">t</w></w></wsub><wrow><w></w><wb>[</wb><wrow><w></w><w class=\"italic\">u</w><wrow><w></w><wb>(</wb><w class=\"italic\">t</w><wb>)</wb></wrow></wrow><wb>]</wb></wrow></wrow><wrow><w></w><wb>(</wb><w class=\"italic\">s</w><wb>)</wb></wrow></wrow><wb>)</wb></wrow></wrow></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{RowBox[{RowBox[{\"(\", RowBox[{\"k\", \"-\", \"1\"}], \")\"}], \" \", SuperscriptBox[\"s\", \"2\"], \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"y\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}], \"+\", RowBox[{SuperscriptBox[\"s\", \"3\"], \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"y\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}], \"+\", RowBox[{\"3\", \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"y\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}]}], \"\", RowBox[{RowBox[{SuperscriptBox[\"s\", \"3\"], \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"u\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}], \"+\", RowBox[{\"s\", \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"u\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}], \"+\", RowBox[{\"2\", \" \", RowBox[{\"(\", RowBox[{RowBox[{SubscriptBox[\"ℒ\", \"t\"], \"[\", RowBox[{\"u\", \"(\", \"t\", \")\"}], \"]\"}], RowBox[{\"(\", \"s\", \")\"}]}], \")\"}]}]}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "00906468-ef87-4246-81f6-b99af24a28eb",
+     "metadata": {
+      "cellLabel": "Out[17]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "TraditionalForm[{{0,1,0},{0,0,1},{-3,0,-k+1}}]\r\nTraditionalForm[{{0},{0},{1}}]\r\nTraditionalForm[{2-3,1-0,-k+1}]\r\nTraditionalForm[{{1}}]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(3,max-content);\"><w><w>0</w></w><w><w>1</w></w><w><w>0</w></w><w><w>0</w></w><w><w>0</w></w><w><w>1</w></w><w><wrow><w></w><w>-</w><w>3</w></wrow></w><w><w>0</w></w><w><wrow><w></w><w>1</w><w>-</w><w class=\"italic\">k</w></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\", \"1\", \"0\"}, {\"0\", \"0\", \"1\"}, {RowBox[{\"-\", \"3\"}], \"0\", RowBox[{\"1\", \"-\", \"k\"}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a8cf6240-18d6-425d-b837-c4fc27419fa0",
+     "metadata": {
+      "cellLabel": "Out[53]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(1,max-content);\"><w><w>0</w></w><w><w>0</w></w><w><w>1</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\"}, {\"0\"}, {\"1\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c9722811-9f7e-47ec-a5ae-1ec284309ab2",
+     "metadata": {
+      "cellLabel": "Out[54]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>,</w><w>1</w><w>,</w><wrow><w></w><w>1</w><w>-</w><w class=\"italic\">k</w></wrow></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"-\", \"1\"}], \",\", \"1\", \",\", RowBox[{\"1\", \"-\", \"k\"}]}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "217437ab-a645-48c6-8e2d-28f5f23be34c",
+     "metadata": {
+      "cellLabel": "Out[55]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(1,max-content);\"><w><w>1</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"1\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "59726c22-b131-439a-afd7-0799c1b38017",
+     "metadata": {
+      "cellLabel": "Out[56]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  }
+ ]
+}
