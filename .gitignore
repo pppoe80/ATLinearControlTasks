@@ -11,3 +11,10 @@ Practice3/*.log
 Practice3/*.fdb_latexmk
 Practice3/*.synctex.gz
 Practice3/*.toc
+Practice4/slprj
+Practice4/tex/Practice4_22320607_XuZiyang_Report.*
+!Practice4/tex/Practice4_22320607_XuZiyang_Report.pdf
+!Practice4/tex/Practice4_22320607_XuZiyang_Report.tex
+Practice4/*.slxc
+Practice4/*.autosave
+Practice4/spinfo
