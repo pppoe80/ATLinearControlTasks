@@ -1,0 +1,1121 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "A = {{2-k,1},{0,-3}}\r\nB = {{-1},{2+k}}\r\nCI = {1,0}\r\nDI = {0}\r\nQC = Join[B,A.B,2]\r\nQCo = Join[CI.B,CI.A.B,DI]\r\nQo = {CI,CI.A}\r\nMatrixRank[QC] ==MatrixRank[A]\r\nTensorRank[QCo] == TensorRank[CI]\r\nMatrixRank[Qo] == MatrixRank[A]\r\nTraditionalForm[QC]\r\nTraditionalForm[QCo]\r\nTraditionalForm[Qo]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>2</w><w>-</w><w>k</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><wrow><w></w><w>-</w><w>3</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{2 - k, 1}, {0, -3}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "07010a23-9539-42ec-9652-ecf848fa9db5",
+     "metadata": {
+      "cellLabel": "Out[54]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>-</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>+</w><w>k</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{-1}, {2 + k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "169a9a8a-e3af-46bb-b920-428a7e1d87f0",
+     "metadata": {
+      "cellLabel": "Out[55]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{1, 0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e717aa74-7738-4af4-830e-61a4228a1f11",
+     "metadata": {
+      "cellLabel": "Out[56]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "9ead0195-cea3-4adc-b17a-fa8eb38c3f7b",
+     "metadata": {
+      "cellLabel": "Out[57]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>,</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>2</w><w>+</w><w>k</w></wrow><w>,</w><wrow><w></w><wrow><w></w><w>-</w><w>3</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>2</w><w>+</w><w>k</w></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{-1, 2*k}, {2 + k, -3*(2 + k)}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "604d7d7d-aad9-487d-a4ff-eb13b56bfdd3",
+     "metadata": {
+      "cellLabel": "Out[58]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>,</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{-1, 2*k, 0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d2419acc-f7b5-4a3b-be6c-83fa2a6b64f4",
+     "metadata": {
+      "cellLabel": "Out[59]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>2</w><w>-</w><w>k</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, 0}, {2 - k, 1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "16626584-69b5-4b99-9b38-7d99b42b372d",
+     "metadata": {
+      "cellLabel": "Out[60]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "72723778-cd9a-4ffe-881c-e3fd376aa5e4",
+     "metadata": {
+      "cellLabel": "Out[61]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2419ad86-9b0c-4e01-bf21-e4b2fb841ed1",
+     "metadata": {
+      "cellLabel": "Out[62]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "49a6e910-ba53-44fa-a2e0-f8500eb0afc6",
+     "metadata": {
+      "cellLabel": "Out[63]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><wrow><w></w><w>-</w><w>1</w></wrow></w><w><wrow><w></w><w>2</w><w></w><w class=\"italic\">k</w></wrow></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>2</w></wrow></w><w><wrow><w></w><wrow><w></w><w>-</w><w>3</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>2</w></wrow><wb>)</wb></wrow></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{RowBox[{\"-\", \"1\"}], RowBox[{\"2\", \" \", \"k\"}]}, {RowBox[{\"k\", \"+\", \"2\"}], RowBox[{RowBox[{\"-\", \"3\"}], \" \", RowBox[{\"(\", RowBox[{\"k\", \"+\", \"2\"}], \")\"}]}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "f138bb13-3895-403d-b9bc-e178bb1d5964",
+     "metadata": {
+      "cellLabel": "Out[64]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>,</w><wrow><w></w><w>2</w><w></w><w class=\"italic\">k</w></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"-\", \"1\"}], \",\", RowBox[{\"2\", \" \", \"k\"}], \",\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "3a7db9ab-ff03-4fb6-8f86-44a4fc067934",
+     "metadata": {
+      "cellLabel": "Out[65]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><w>1</w></w><w><w>0</w></w><w><wrow><w></w><w>2</w><w>-</w><w class=\"italic\">k</w></wrow></w><w><w>1</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"1\", \"0\"}, {RowBox[{\"2\", \"-\", \"k\"}], \"1\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "3930cd62-d2c4-4b92-bcfa-54cd0e2c963b",
+     "metadata": {
+      "cellLabel": "Out[66]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1699215220829,
+     "endTime": 1699215222319
+    },
+    "executionOrder": 54,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "A = {{0,1+k},{2,0}}\r\nB = {{0},{1}}\r\nCI = {1,-1}\r\nDI = {0}\r\nQC = Join[B,A.B,2]\r\nQCo = Join[CI.B,CI.A.B,DI]\r\nQo = {CI,CI.A}\r\nMatrixRank[QC] == MatrixRank[A]\r\nTensorRank[QCo] == TensorRank[CI]\r\nMatrixRank[Qo] == MatrixRank[A]\r\nTraditionalForm[QC]\r\nTraditionalForm[QCo]\r\nTraditionalForm[Qo]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1 + k}, {2, 0}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "02572626-a1f2-4f26-a807-331633843a58",
+     "metadata": {
+      "cellLabel": "Out[67]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>1</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0}, {1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "765d7da8-9a1b-4ee6-bda4-3b3947171262",
+     "metadata": {
+      "cellLabel": "Out[68]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{1, -1}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a02dd526-33c4-4928-a5e4-5f7d9a74b6ca",
+     "metadata": {
+      "cellLabel": "Out[69]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "32313b36-e2fd-4383-bdb7-8b3695c1a984",
+     "metadata": {
+      "cellLabel": "Out[70]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1 + k}, {1, 0}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0974f2bd-1347-4ad6-9f64-deb09750aedd",
+     "metadata": {
+      "cellLabel": "Out[71]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>,</w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{-1, 1 + k, 0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "6e208933-b892-437c-b6a7-ccfd26330584",
+     "metadata": {
+      "cellLabel": "Out[72]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, -1}, {-2, 1 + k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0c69fa43-d111-427a-b090-12d225ea17f0",
+     "metadata": {
+      "cellLabel": "Out[73]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7d5ca06f-05b6-425c-bc14-96f4571e10b0",
+     "metadata": {
+      "cellLabel": "Out[74]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "b0792ec8-02e0-4163-9844-4d0826c140af",
+     "metadata": {
+      "cellLabel": "Out[75]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "dabd9d44-6447-46d8-8565-07279002ed84",
+     "metadata": {
+      "cellLabel": "Out[76]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><w>0</w></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>1</w></wrow></w><w><w>1</w></w><w><w>0</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\", RowBox[{\"k\", \"+\", \"1\"}]}, {\"1\", \"0\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "5155bbfd-9f1e-480e-99bf-372cd85eb0c9",
+     "metadata": {
+      "cellLabel": "Out[77]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>,</w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>1</w></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"-\", \"1\"}], \",\", RowBox[{\"k\", \"+\", \"1\"}], \",\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "407865c0-3a5e-497d-afbf-15bd08ac4946",
+     "metadata": {
+      "cellLabel": "Out[78]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><w>1</w></w><w><wrow><w></w><w>-</w><w>1</w></wrow></w><w><wrow><w></w><w>-</w><w>2</w></wrow></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>1</w></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"1\", RowBox[{\"-\", \"1\"}]}, {RowBox[{\"-\", \"2\"}], RowBox[{\"k\", \"+\", \"1\"}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d9c4b89b-6ec9-4346-8d1b-0b2b56b71853",
+     "metadata": {
+      "cellLabel": "Out[79]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1699215222320,
+     "endTime": 1699215223775
+    },
+    "executionOrder": 67,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "A = {{-2,1},{1+k,3}}\r\nB = {{0,1},{-2,1}}\r\nCI = {0,1}\r\nDI = {0}\r\nQC = Join[B,A.B,2]\r\nQCo = Join[CI.B,CI.A.B,DI]\r\nQo = {CI,CI.A}\r\nMatrixRank[QC] == MatrixRank[A]\r\nTensorRank[QCo] == TensorRank[CI]\r\nMatrixRank[Qo] == MatrixRank[A]\r\nTraditionalForm[QC]\r\nTraditionalForm[QCo]\r\nTraditionalForm[Qo]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><w>,</w><w>3</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{-2, 1}, {1 + k, 3}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "66dde8d5-6813-4b93-a992-72449904f56d",
+     "metadata": {
+      "cellLabel": "Out[80]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1}, {-2, 1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4229ac83-30fb-4870-91b8-1938c725bbea",
+     "metadata": {
+      "cellLabel": "Out[81]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{0, 1}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4706f290-a00d-4ea5-b85d-403f7ad41931",
+     "metadata": {
+      "cellLabel": "Out[82]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "15ebb0b5-e799-4669-bf19-8737b6095186",
+     "metadata": {
+      "cellLabel": "Out[83]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>6</w></wrow><w>,</w><wrow><w></w><w>4</w><w>+</w><w>k</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1, -2, -1}, {-2, 1, -6, 4 + k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ac26aec2-48b4-4237-94a8-1db876f25ea7",
+     "metadata": {
+      "cellLabel": "Out[84]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>6</w></wrow><w>,</w><wrow><w></w><w>4</w><w>+</w><w>k</w></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{-2, 1, -6, 4 + k, 0}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e4a12236-0aa6-4557-823d-8e2e57c43fe5",
+     "metadata": {
+      "cellLabel": "Out[85]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><w>,</w><w>3</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1}, {1 + k, 3}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2d2903aa-4c8b-4582-9d8e-622d9512f064",
+     "metadata": {
+      "cellLabel": "Out[86]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "10768b08-5805-41d1-93db-1ee2e40c8fe3",
+     "metadata": {
+      "cellLabel": "Out[87]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "b3f4b8db-21b6-4116-a8a7-1e7cb6ad02d0",
+     "metadata": {
+      "cellLabel": "Out[88]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "24a6b851-c076-41ea-8e69-a397f06457f1",
+     "metadata": {
+      "cellLabel": "Out[89]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(4,max-content);\"><w><w>0</w></w><w><w>1</w></w><w><wrow><w></w><w>-</w><w>2</w></wrow></w><w><wrow><w></w><w>-</w><w>1</w></wrow></w><w><wrow><w></w><w>-</w><w>2</w></wrow></w><w><w>1</w></w><w><wrow><w></w><w>-</w><w>6</w></wrow></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>4</w></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\", \"1\", RowBox[{\"-\", \"2\"}], RowBox[{\"-\", \"1\"}]}, {RowBox[{\"-\", \"2\"}], \"1\", RowBox[{\"-\", \"6\"}], RowBox[{\"k\", \"+\", \"4\"}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c6293824-07a2-435d-9402-1173abb8e004",
+     "metadata": {
+      "cellLabel": "Out[90]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>6</w></wrow><w>,</w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>4</w></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"{\", RowBox[{RowBox[{\"-\", \"2\"}], \",\", \"1\", \",\", RowBox[{\"-\", \"6\"}], \",\", RowBox[{\"k\", \"+\", \"4\"}], \",\", \"0\"}], \"}\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ece82710-465f-4fd6-94cb-ce49c10f81ee",
+     "metadata": {
+      "cellLabel": "Out[91]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><w>0</w></w><w><w>1</w></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>1</w></wrow></w><w><w>3</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"0\", \"1\"}, {RowBox[{\"k\", \"+\", \"1\"}], \"3\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e4f933f0-4f63-4468-b2aa-72b36e4c731e",
+     "metadata": {
+      "cellLabel": "Out[92]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1699215223775,
+     "endTime": 1699215225321
+    },
+    "executionOrder": 80,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "A = {{2,1},{0,k}}\r\nB = {{1},{2}}\r\nCI = {{1,-2},{2,1}}\r\nDI = {{0},{0}}\r\nQC = Join[B,A.B,2]\r\nQCo = Join[CI.B,CI.A.B,DI,2]\r\nQo = Join[CI,CI.A,2]\r\nTensorRank[QC] == TensorRank[A]\r\nTensorRank[QCo] == TensorRank[CI]\r\nTensorRank[Qo] == TensorRank[A]\r\nTraditionalForm[QC]\r\nTraditionalForm[QCo]\r\nTraditionalForm[Qo]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>k</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{2, 1}, {0, k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "fb6bc8ca-ac94-4f54-a96e-aebd90949f55",
+     "metadata": {
+      "cellLabel": "Out[93]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>1</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>2</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1}, {2}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "6ecd6405-c2da-4e3f-9da2-df7da0c236c7",
+     "metadata": {
+      "cellLabel": "Out[94]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>2</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, -2}, {2, 1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "819d79ea-eda6-48e6-8dfe-b153c3e3f53a",
+     "metadata": {
+      "cellLabel": "Out[95]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0}, {0}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "819fb6d5-e451-4ac8-9fac-9c92e141de3a",
+     "metadata": {
+      "cellLabel": "Out[96]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><w>4</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, 4}, {2, 2*k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c5c03bda-8ec3-418a-aec8-a18ffc35b377",
+     "metadata": {
+      "cellLabel": "Out[97]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><w>3</w></wrow><w>,</w><wrow><w></w><w>2</w><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow></wrow><wb>)</wb></wrow></wrow></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>4</w><w>,</w><wrow><w></w><w>4</w><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>2</w><w>+</w><w>k</w></wrow><wb>)</wb></wrow></wrow></wrow><w>,</w><w>0</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{-3, 2 + 2*(1 - 2*k), 0}, {4, 4 + 2*(2 + k), 0}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7b0c96f8-30f8-48c7-98b9-423a728fc536",
+     "metadata": {
+      "cellLabel": "Out[98]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><wrow><w></w><w>-</w><w>2</w></wrow><w>,</w><w>2</w><w>,</w><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>2</w><w>,</w><w>1</w><w>,</w><w>4</w><w>,</w><wrow><w></w><w>2</w><w>+</w><w>k</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, -2, 2, 1 - 2*k}, {2, 1, 4, 2 + k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "9fc2e81c-5f88-4919-8b28-081c6833151a",
+     "metadata": {
+      "cellLabel": "Out[99]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e2d73838-1fe3-494e-8cf6-51c55c6bffc2",
+     "metadata": {
+      "cellLabel": "Out[100]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "21a4e7ac-5b32-44b3-b774-9d557f803cf0",
+     "metadata": {
+      "cellLabel": "Out[101]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "381ed1cc-b88d-495f-adbc-c25e32f5b556",
+     "metadata": {
+      "cellLabel": "Out[102]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><w>1</w></w><w><w>4</w></w><w><w>2</w></w><w><wrow><w></w><w>2</w><w></w><w class=\"italic\">k</w></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"1\", \"4\"}, {\"2\", RowBox[{\"2\", \" \", \"k\"}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0c532528-7195-48eb-9b09-c78275290a93",
+     "metadata": {
+      "cellLabel": "Out[103]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(3,max-content);\"><w><wrow><w></w><w>-</w><w>3</w></wrow></w><w><wrow><w></w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>2</w><w></w><w class=\"italic\">k</w></wrow></wrow><wb>)</wb></wrow></wrow><w>+</w><w>2</w></wrow></w><w><w>0</w></w><w><w>4</w></w><w><wrow><w></w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>2</w></wrow><wb>)</wb></wrow></wrow><w>+</w><w>4</w></wrow></w><w><w>0</w></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{RowBox[{\"-\", \"3\"}], RowBox[{RowBox[{\"2\", \" \", RowBox[{\"(\", RowBox[{\"1\", \"-\", RowBox[{\"2\", \" \", \"k\"}]}], \")\"}]}], \"+\", \"2\"}], \"0\"}, {\"4\", RowBox[{RowBox[{\"2\", \" \", RowBox[{\"(\", RowBox[{\"k\", \"+\", \"2\"}], \")\"}]}], \"+\", \"4\"}], \"0\"}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "9b361001-028a-4465-811c-6c93d1a08c6e",
+     "metadata": {
+      "cellLabel": "Out[104]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(4,max-content);\"><w><w>1</w></w><w><wrow><w></w><w>-</w><w>2</w></wrow></w><w><w>2</w></w><w><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>2</w><w></w><w class=\"italic\">k</w></wrow></wrow></w><w><w>2</w></w><w><w>1</w></w><w><w>4</w></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>2</w></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{\"1\", RowBox[{\"-\", \"2\"}], \"2\", RowBox[{\"1\", \"-\", RowBox[{\"2\", \" \", \"k\"}]}]}, {\"2\", \"1\", \"4\", RowBox[{\"k\", \"+\", \"2\"}]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "08c89309-f1f1-4e30-b7c3-4767015d84c7",
+     "metadata": {
+      "cellLabel": "Out[105]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1699215225321,
+     "endTime": 1699215226836
+    },
+    "executionOrder": 93,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "A = {{0,1},{0,k}}\r\nB = {{0},{2}}\r\nCI = {{1,0},{0,1}}\r\nDI = {{0},{0}}\r\ntao = 1\r\nf[t] = E^(A*(t-tao)).B.Transpose[B].E^(Transpose[A]*(t-tao))\r\nWc = Integrate[f[t],{t,0,1}]\r\nTraditionalForm[Wc]\r\nDet[Wc]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>k</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0, 1}, {0, k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "21986306-9d1c-405f-aa98-e58602f6c434",
+     "metadata": {
+      "cellLabel": "Out[121]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>2</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0}, {2}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "6d8a77a4-c0d6-4643-95d8-a2b82b617574",
+     "metadata": {
+      "cellLabel": "Out[122]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>1</w><w>,</w><w>0</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{1, 0}, {0, 1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "324a6abe-1633-4dec-8f87-161316feb68e",
+     "metadata": {
+      "cellLabel": "Out[123]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><w>0</w><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{0}, {0}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "560c8093-bcfb-4c28-95f7-97d8b55053e8",
+     "metadata": {
+      "cellLabel": "Out[124]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>1</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "1",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "adb808b5-06ef-4714-ae25-fbc215f5a285",
+     "metadata": {
+      "cellLabel": "Out[125]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>+</w><wrow><w></w><w>2</w><w></w><w>t</w></wrow></wrow></w></wsup></wrow><w>,</w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>+</w><wrow><w></w><w>k</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>+</w><w>t</w></wrow><wb>)</wb></wrow></wrow><w>+</w><w>t</w></wrow></w></wsup></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>+</w><wrow><w></w><w>k</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>+</w><w>t</w></wrow><wb>)</wb></wrow></wrow><w>+</w><w>t</w></wrow></w></wsup></wrow><w>,</w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><w>2</w><w></w><w>k</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>+</w><w>t</w></wrow><wb>)</wb></wrow></wrow></w></wsup></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{4*E^(-2 + 2*t), 4*E^(-1 + k*(-1 + t) + t)}, {4*E^(-1 + k*(-1 + t) + t), 4*E^(2*k*(-1 + t))}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d8daaa96-6705-4b1d-801b-82e6ee0fc9ec",
+     "metadata": {
+      "cellLabel": "Out[126]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>2</w><w>-</w><wfrac><w><w>2</w></w><w><w></w><w><wsup><w></w><w>𝕖</w><w><w>2</w></w></wsup></w></w></wfrac></wrow><w>,</w><wfrac><w><wrow><w></w><w>4</w><w>-</w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>-</w><w>k</w></wrow></w></wsup></wrow></wrow></w><w><w></w><w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow></w></w></wfrac></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><wfrac><w><wrow><w></w><w>4</w><w>-</w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>-</w><w>k</w></wrow></w></wsup></wrow></wrow></w><w><w></w><w><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow></w></w></wfrac><w>,</w><wfrac><w><wrow><w></w><w>2</w><w>-</w><wrow><w></w><w>2</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w>k</w></wrow></w></wsup></wrow></wrow></w><w><w></w><w><w>k</w></w></w></wfrac></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{2 - 2/E^2, (4 - 4*E^(-1 - k))/(1 + k)}, {(4 - 4*E^(-1 - k))/(1 + k), (2 - 2/E^(2*k))/k}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7f426108-3282-43b6-8aa7-74e8ac4cf464",
+     "metadata": {
+      "cellLabel": "Out[127]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow style=\"font-family:&quot;Times&quot;;\"><w></w><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><wrow><w></w><w>2</w><w>-</w><wfrac><w><w>2</w></w><w><w></w><w><wsup><w></w><w>𝕖</w><w><w>2</w></w></wsup></w></w></wfrac></wrow></w><w><wfrac><w><wrow><w></w><w>4</w><w>-</w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><wrow><w></w><w class=\"italic\">k</w></wrow></wrow><w>-</w><w>1</w></wrow></w></wsup></wrow></wrow></w><w><w></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>1</w></wrow></w></w></wfrac></w><w><wfrac><w><wrow><w></w><w>4</w><w>-</w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><wrow><w></w><w class=\"italic\">k</w></wrow></wrow><w>-</w><w>1</w></wrow></w></wsup></wrow></wrow></w><w><w></w><w><wrow><w></w><w class=\"italic\">k</w><w>+</w><w>1</w></wrow></w></w></wfrac></w><w><wfrac><w><wrow><w></w><w>2</w><w>-</w><wrow><w></w><w>2</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w class=\"italic\">k</w></wrow></w></wsup></wrow></wrow></w><w><w></w><w><w class=\"italic\">k</w></w></w></wfrac></w></wgrid><w>⁠</w><wb>)</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "BoxData[RowBox[{\"(\", \"⁠\", GridBox[{{RowBox[{\"2\", \"-\", FractionBox[\"2\", SuperscriptBox[\"\", \"2\"]]}], FractionBox[RowBox[{\"4\", \"-\", RowBox[{\"4\", \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", RowBox[{\"k\"}]}], \"-\", \"1\"}]]}]}], RowBox[{\"k\", \"+\", \"1\"}]]}, {FractionBox[RowBox[{\"4\", \"-\", RowBox[{\"4\", \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", RowBox[{\"k\"}]}], \"-\", \"1\"}]]}]}], RowBox[{\"k\", \"+\", \"1\"}]], FractionBox[RowBox[{\"2\", \"-\", RowBox[{\"2\", \" \", SuperscriptBox[\"\", RowBox[{RowBox[{\"-\", \"2\"}], \" \", \"k\"}]]}]}], \"k\"]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], \"⁠\", \")\"}], TraditionalForm]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "cde27801-a07b-4520-b460-39da29a94adf",
+     "metadata": {
+      "cellLabel": "Out[128]//TraditionalForm= ",
+      "isBoxData": true
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wfrac><w><w>4</w></w><w><w></w><w><w>k</w></w></w></wfrac><w>-</w><wfrac><w><w>4</w></w><w><w></w><w><wrow><w></w><wsup><w></w><w>𝕖</w><w><w>2</w></w></wsup><w></w><w>k</w></wrow></w></w></wfrac><w>+</w><wfrac><w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>-</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow></wrow></w></wsup></wrow></w><w><w></w><w><w>k</w></w></w></wfrac><w>-</w><wfrac><w><wrow><w></w><w>4</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w></w><w>k</w></wrow></w></wsup></wrow></w><w><w></w><w><w>k</w></w></w></wfrac><w>-</w><wfrac><w><w>16</w></w><w><w></w><w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><wb>)</wb></wrow><w><w>2</w></w></wsup></w></w></wfrac><w>-</w><wfrac><w><wrow><w></w><w>16</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>-</w><wrow><w></w><w>2</w><w></w><w>k</w></wrow></wrow></w></wsup></wrow></w><w><w></w><w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><wb>)</wb></wrow><w><w>2</w></w></wsup></w></w></wfrac><w>+</w><wfrac><w><wrow><w></w><w>32</w><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><wrow><w></w><w>-</w><w>1</w></wrow><w>-</w><w>k</w></wrow></w></wsup></wrow></w><w><w></w><w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><w>k</w></wrow><wb>)</wb></wrow><w><w>2</w></w></wsup></w></w></wfrac></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "4/k - 4/(E^2*k) + (4*E^(-2 - 2*k))/k - 4/(E^(2*k)*k) - 16/(1 + k)^2 - (16*E^(-2 - 2*k))/(1 + k)^2 + (32*E^(-1 - k))/(1 + k)^2",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "bbf2f1cb-7c65-42a1-9d8f-31301a764021",
+     "metadata": {
+      "cellLabel": "Out[129]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1699216235912,
+     "endTime": 1699216237027
+    },
+    "executionOrder": 121,
+    "success": true
+   }
+  }
+ ]
+}
