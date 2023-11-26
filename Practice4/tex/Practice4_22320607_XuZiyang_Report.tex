@@ -122,6 +122,42 @@
     $A = \begin{bmatrix}
         0&1&0\\
         0&0&1\\
+        -2&0&-k
+    \end{bmatrix}$
+
+    $B = \begin{bmatrix}
+        0\\
+        0\\
+        1
+    \end{bmatrix}$
+
+    $C = \begin{bmatrix}
+        3&0&0
+    \end{bmatrix}$
+
+    \subsubsection*{Observable}
+    $A = \begin{bmatrix}
+        -k&1&0\\
+        0&0&1\\
+        -2&0&0
+    \end{bmatrix}$
+
+    $B = \begin{bmatrix}
+        0\\
+        0\\
+        3
+    \end{bmatrix}$
+
+    $C = \begin{bmatrix}
+        1&0&0
+    \end{bmatrix}$
+
+    \newpage
+    System2:
+    \subsubsection*{Controlable}
+    $A = \begin{bmatrix}
+        0&1&0\\
+        0&0&1\\
         -3&0&k+1
     \end{bmatrix}$
 
@@ -157,7 +193,10 @@
     $D = \textcolor{red}{b_n} = 1$(not $b_0$)
 
     \subsection{Is system stable for u(t) = 0 ?}
-    \textcolor{red}{Both not.}
+    \includegraphics[width = 0.8\linewidth]{../screenshots/SystemStable.PNG}
+    
+    (Very Complex solve?)
+    \textcolor{red}{Not for all $Re(s)<0$,Leading not stable.}
     \subsection{Construct the system in MATLAB/Simulink}
     See section \textbf{Constructing Systems}.
 

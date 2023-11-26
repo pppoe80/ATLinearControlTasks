@@ -581,6 +581,107 @@
    ],
    "metadata": {},
    "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "k=7\r\nsol1 = ToRadicals[Solve[{s^3+k*s^2+2==0},s]]\r\nsol2 = ToRadicals[Solve[{s^3+(k-1)*s^2+3==0},s]]\r\n{Re[s/.sol1[[1]]]<0,Re[s/.sol1[[2]]]<0,Re[s/.sol1[[3]]]<0}\r\n{Re[s/.sol2[[1]]]<0,Re[s/.sol2[[2]]]<0,Re[s/.sol2[[3]]]<0}",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>7</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "7",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2e037590-0352-4e20-b180-5c8fbcac4fc8",
+     "metadata": {
+      "cellLabel": "Out[30]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>s</w><w class=\"symbol\"></w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>3</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>7</w></wrow><w>-</w><wfrac><w><w>49</w></w><w><w></w><w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>370</w><w>-</w><wrow><w></w><w>3</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>2139</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></w></w></wfrac><w>-</w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>370</w><w>-</w><wrow><w></w><w>3</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>2139</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>s</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><w>7</w></w><w><w></w><w><w>3</w></w></w></wfrac></wrow><w>+</w><wfrac><w><wrow><w></w><w>49</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><wrow><w></w><w>6</w><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>370</w><w>-</w><wrow><w></w><w>3</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>2139</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></w></w></wfrac><w>+</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>6</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>370</w><w>-</w><wrow><w></w><w>3</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>2139</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>s</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><w>7</w></w><w><w></w><w><w>3</w></w></w></wfrac></wrow><w>+</w><wfrac><w><wrow><w></w><w>49</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><wrow><w></w><w>6</w><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>370</w><w>-</w><wrow><w></w><w>3</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>2139</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></w></w></wfrac><w>+</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>6</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>370</w><w>-</w><wrow><w></w><w>3</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>2139</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{s -> (-7 - 49/(370 - 3*Sqrt[2139])^(1/3) - (370 - 3*Sqrt[2139])^(1/3))/3}, {s -> -7/3 + (49*(1 - I*Sqrt[3]))/(6*(370 - 3*Sqrt[2139])^(1/3)) + ((1 + I*Sqrt[3])*(370 - 3*Sqrt[2139])^(1/3))/6}, {s -> -7/3 + (49*(1 + I*Sqrt[3]))/(6*(370 - 3*Sqrt[2139])^(1/3)) + ((1 - I*Sqrt[3])*(370 - 3*Sqrt[2139])^(1/3))/6}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "54b6913c-89d9-4dc3-a3a9-acd2b437309a",
+     "metadata": {
+      "cellLabel": "Out[31]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>s</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>-</w><wrow><w></w><w>4</w><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wfrac><w><w>2</w></w><w><w></w><w><wrow><w></w><w>19</w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>105</w></w></wsqrt></wrow></w></w></wfrac><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow><w>-</w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>19</w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>105</w></w></wsqrt></wrow><wb>)</wb></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>s</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wfrac><w><w>2</w></w><w><w></w><w><wrow><w></w><w>19</w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>105</w></w></wsqrt></wrow></w></w></wfrac><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow><w>+</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>19</w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>105</w></w></wsqrt></wrow><wb>)</wb></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>s</w><w class=\"symbol\"></w><wrow><w></w><wrow><w></w><w>-</w><w>2</w></wrow><w>+</w><wrow><w></w><w>2</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wfrac><w><w>2</w></w><w><w></w><w><wrow><w></w><w>19</w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>105</w></w></wsqrt></wrow></w></w></wfrac><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow><w>+</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>-</w><wrow><w></w><w>𝕚</w><w></w><wsqrt><w><w>\\</w></w><w></w><w><w>3</w></w></wsqrt></wrow></wrow><wb>)</wb></wrow><w></w><wsup><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>19</w><w>-</w><wsqrt><w><w>\\</w></w><w></w><w><w>105</w></w></wsqrt></wrow><wb>)</wb></wrow></wrow><wb>)</wb></wrow><w><wrow><w></w><w>1</w><w>/</w><w>3</w></wrow></w></wsup></wrow></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{s -> -2 - 4*(2/(19 - Sqrt[105]))^(1/3) - ((19 - Sqrt[105])/2)^(1/3)}, {s -> -2 + 2*(1 - I*Sqrt[3])*(2/(19 - Sqrt[105]))^(1/3) + ((1 + I*Sqrt[3])*((19 - Sqrt[105])/2)^(1/3))/2}, {s -> -2 + 2*(1 + I*Sqrt[3])*(2/(19 - Sqrt[105]))^(1/3) + ((1 - I*Sqrt[3])*((19 - Sqrt[105])/2)^(1/3))/2}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4bf18e96-41de-419b-b702-5b9ee8200d95",
+     "metadata": {
+      "cellLabel": "Out[32]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>True</w><w>,</w><w>False</w><w>,</w><w>False</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{True, False, False}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7e4ad350-1b8a-4f75-b0bd-8024f6241b4c",
+     "metadata": {
+      "cellLabel": "Out[33]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>True</w><w>,</w><w>False</w><w>,</w><w>False</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{True, False, False}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "460da270-a803-4c7d-a569-069ccdf9ec3a",
+     "metadata": {
+      "cellLabel": "Out[34]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1701016263557,
+     "endTime": 1701016264181
+    },
+    "executionOrder": 30,
+    "success": true
+   }
   }
  ]
 }
